@@ -73,12 +73,12 @@ function init(){
             </div>
           </li>
         `;
-        count+=1;
+        count++;
     })
     ticketCard.innerHTML = str;
     searchResultNum.innerHTML = count;
 }
-init();
+
 
 //縣市篩選器邏輯 start -------------------------------------
 filter.addEventListener("change", function(e){
@@ -216,3 +216,7 @@ filter.addEventListener("change", function(e){
         ticketRate.value = "";
     }
 })
+
+
+//套票卡片 執行初始化資料
+init();
